@@ -1,0 +1,12 @@
+If you're looking to capture everything up to "abc":
+
+/^(.*?)abc/
+Explanation:
+
+( ) capture the expression inside the parentheses for access using $1, $2, etc.
+
+^ match start of line
+
+.* match anything, ? non-greedily (match the minimum number of characters required) - [1]
+
+[1] The reason why this is needed is that otherwise, in the following string:
